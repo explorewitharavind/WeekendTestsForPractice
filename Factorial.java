@@ -1,15 +1,13 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class Factorial {
     public static void main(String[] args) {
+        System.out.println("Enter a Number to get Factorial");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a Number to find Factoeial");
-        int Number = sc.nextInt();
-        int sum =1;
-        for(int i=Number;0<i;i--)
+        int fact = sc.nextInt();
+        for(int i=fact-1;i>0;i--)
         {
-            sum = sum*i ;
+            fact = fact*i;
         }
-        System.out.println("Factorial of"+Number+" is "+ sum);
+        System.out.println("The Factorial is "+fact);
     }
 }
